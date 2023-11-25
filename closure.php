@@ -12,3 +12,9 @@ $get_sum = function($a, $b) {
 };
 
 echo_price($get_sum);
+
+$get_sum2 = fn(int $a , int $b) => $a + $b;
+
+$sum2 = $get_sum2(20, 20);
+
+echo $sum2;

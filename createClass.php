@@ -8,11 +8,17 @@ class Item {
     {
         return number_format($this->price) . $yen;
     }
+
+    public function __construct(string $name, int $price)
+        {
+            $this->name = $name;
+            $this->price = $price;
+        }
 }
 
-$item = new Item();
+$item = new Item("PHP", 1500);
 
-$item->name = "php";
-$item->price = 150000;
+// $item->name = "php";
+// $item->price = 150000;
 
 echo $item->name, "/", $item->getPrice("円");

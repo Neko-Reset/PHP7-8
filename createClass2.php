@@ -1,5 +1,5 @@
 <?php
-class Item {
+class Item2 {
     public string $name;  // 商品名
     private int $price;   // 価格
 
@@ -26,7 +26,19 @@ class Item {
         }
 }
 
-$item = new Item("PHP", 1500);
+class Book extends Item2 {
+    private int $page; // ページ数
+}
+
+class Food extends Item2 {
+    //
+}
+
+class User extends Item2 {
+    //
+}
+
+$item = new Book("PHP", 1500);
 
 $item->setPrice(100);
 

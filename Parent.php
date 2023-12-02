@@ -21,7 +21,6 @@ class Book extends Item {
         $this->page = $page;
     }
 
-
     // オーバーライズ
     public function getUnit()
     {

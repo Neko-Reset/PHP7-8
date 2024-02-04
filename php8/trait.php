@@ -41,7 +41,7 @@ class Service
     }
 
     // 税込価格を計算
-    public function getPriceWithTax(): int
+    public function getPriceWithTax() : int
     {
         return $this->price + ($this->price * $this->getTax() / 100);
     }

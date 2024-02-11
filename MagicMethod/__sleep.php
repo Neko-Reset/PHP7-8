@@ -25,6 +25,9 @@ $user = new UserProfile();
 $serializedUser = serialize($user);
 echo $serializedUser; // パスワードが含まれていないシリアライズされた文字列が表示されます
 
+// 出力
+// "UserProfile":1:{s:4:"name";s:8:"John Doe";}
+
 // このコードでは、UserProfile クラスのインスタンス $user をシリアライズしています。__sleep() メソッドのおかげで
 // シリアライズされた文字列には password プロパティが含まれず、name プロパティのみが含まれます。
 // これにより、セキュリティ上の理由からパスワードなどの機密情報をシリアライズの結果から安全に除外することができます。

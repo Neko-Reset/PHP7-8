@@ -19,4 +19,4 @@ class Bob
     }
 }
 
-Bob::jonh();
+Bob::jonh(); // 出力 : __callStaticメソッドが呼ばれました

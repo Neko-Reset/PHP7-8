@@ -19,4 +19,7 @@ $user = new UserProfile();
 $serializedUser = serialize($user);
 echo $serializedUser; // パスワードが含まれていないことが確認できます
 
+// 出力
+// "UserProfile":1:{s:4:"name";s:8:"John Doe";}%
+
 // この例では、UserProfile クラスに name と password の2つのプライベートプロパティがありますが、__serialize() メソッドを使用して password プロパティをシリアライズのプロセスから除外しています。

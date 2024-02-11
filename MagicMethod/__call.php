@@ -22,4 +22,4 @@ class Bob
 }
 
 $bob = new Bob();
-$bob->helloBob();
+$bob->helloBob(); // 出力 : Hello, Bob

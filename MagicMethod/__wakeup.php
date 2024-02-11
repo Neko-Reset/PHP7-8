@@ -37,7 +37,7 @@ $db = new DatabaseConnection();
 $serializedDb = serialize($db);
 
 // オブジェクトのデシリアライズ
-$unserializedDb = unserialize($serializedDb);
+$unserializedDb = unserialize($serializedDb); // 出力 : データベース接続が再確立されました。
 
 // この例では、__wakeup() メソッド内で connect() メソッドを呼び出してデータベース接続を再確立しています。これにより、デシリアライズされたオブジェクトが正常に機能するための必要なリソースが再度利用可能になります。
 
